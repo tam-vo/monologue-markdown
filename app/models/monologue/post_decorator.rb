@@ -1,10 +1,4 @@
 Monologue::Post.class_eval do
-  before_validation do
-    if self.new_record?
-      self.is_markdown = true
-    end
-  end
-
   def is_markdown?
     self.is_markdown == true
   end
